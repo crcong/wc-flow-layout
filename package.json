@@ -1,5 +1,5 @@
 {
-  "name": "wc-waterfall",
+  "name": "@crcong/wc-waterfall",
   "private": false,
   "version": "0.1.1",
   "type": "module",
@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "vite",
     "build:docs": "vite build --outDir docs --base ./",
-    "build": "rimraf dist/* && rollup -c && rimraf dist/types",
+    "build": "rimraf dist/ && rollup -c && rimraf dist/types",
     "preview": "vite preview"
   },
   "devDependencies": {

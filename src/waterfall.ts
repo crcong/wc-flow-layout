@@ -6,7 +6,8 @@ import { createWebComponent } from './dom-utils'
 
 const default_props = () => ({
   cols: 2,
-  gap: 4
+  gapX: 4,
+  gapY: 4
 })
 
 export class WaterfallElement extends createWebComponent(default_props) {

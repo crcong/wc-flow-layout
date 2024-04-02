@@ -13,7 +13,7 @@
     <!-- <script src="./dist/index.iife.js"></script> -->
 
     <div id="app">
-      <wc-waterfall id="fl" cols="5" gap="10" style="max-width: 960px; margin: 0 auto;">
+      <wc-waterfall id="fl" cols="5" gapX="10" gapY="10" style="max-width: 960px; margin: 0 auto;">
         <div>01</div>
         <div>02</div>
         <div>03</div>
@@ -32,7 +32,8 @@
       <div class="operation">
         <h2>Props</h2>
         
-        <p>gap <input type="range" value="10" oninput="fl.gap = this.value" /></p>
+        <p>gapX <input type="range" value="10" oninput="fl.gapX = this.value" /></p>
+        <p>gapY <input type="range" value="10" oninput="fl.gapY = this.value" /></p>
         
         <p>cols <input type="range" value="5" min="1" max="6" oninput="fl.cols = this.value" /></p>
 
