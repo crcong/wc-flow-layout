@@ -6,8 +6,8 @@ export function minIndex(arr: number[]) {
 
 export type Props = {
   cols: number
-  gapX: number
-  gapY: number
+  'gap-x': number
+  'gap-y': number
 }
 
 type RenderOptions<T> = {
@@ -26,7 +26,10 @@ type RenderOptions<T> = {
   getChildren(el: T): { [index: number]: T, readonly length: number }
 }
 
-export function waterfall_layout<T>(container: T, { getW, setW, getH, setH, getPad, setX, setY, getChildren }: RenderOptions<T>, { cols, gapX, gapY }: Props) {
+export function waterfall_layout<T>(container: T, { getW, setW, getH, setH, getPad, setX, setY, getChildren }: RenderOptions<T>, props: Props) {
+  const { cols } = props;
+  const gapX = props["gap-x"]
+  const gapY =  props["gap-y"]
   const [pt, pr, pb, pl] = getPad(container)
   const children = getChildren(container), len = children.length
 

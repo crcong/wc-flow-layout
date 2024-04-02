@@ -1,4 +1,4 @@
-> fork: The `gap` parameter is separated. `gap` => `gapX`, `gapY`
+> fork: The `gap` parameter is separated. `gap` => `gap-x`, `gap-y`
 
 # wc-waterfall
 
@@ -42,7 +42,7 @@ import 'wc-waterfall'
 ```
 
 ```html
-<wc-waterfall gapX="10" gapY="10" cols="3">
+<wc-waterfall gap-x="10" gap-y="10" cols="3">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -60,7 +60,7 @@ import 'wc-waterfall'
 
 export default function MyApp() {
   return (
-    <wc-waterfall gapX={10} gapY={10} cols={3}>
+    <wc-waterfall gap-x={10} gap-y={10} cols={3}>
       <div>01</div>
       <div>02</div>
       <div>03</div>
@@ -79,8 +79,8 @@ TypeScript support (JSX/TSX)
 declare namespace JSX {
   interface IntrinsicElements {
     'wc-waterfall': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & {
-      gapX?: number;
-      gapY?: number;
+      gap-x?: number;
+      gap-x?: number;
       cols?: number;
     }, HTMLElement>;
   }
@@ -134,8 +134,8 @@ export default defineConfig({
 | Name | Type     | Default | Description                      |
 | ---- | -------- | ------- | -------------------------------- |
 | cols | `number` | 2       | Number of columns                |
-| gapX | `number` | 4       | Interval between cells in row    |
-| gapY | `number` | 4       | Interval between cells in column |
+| gap-x | `number` | 4       | Interval between cells in row    |
+| gap-y | `number` | 4       | Interval between cells in column |
 
 ## ⭐️ Show Your Support
 
